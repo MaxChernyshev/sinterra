@@ -6,6 +6,8 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Front\MainController;
 use App\Http\Controllers\Admin\AdminPanelMainController;
 use App\Http\Controllers\Admin\UserController;
+use App\Http\Controllers\Front\ContactFormController;
+
 
 
 /*
@@ -27,6 +29,10 @@ Route::get('/', [MainController::class, 'index'])->name('mainPage');
 
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 
+Route::get('/contact', [ContactFormController::class, 'index'])->name('contact-form');
+
+Route::post('/send', [ContactFormController::class, 'send'])->name('contact-form-send');
+
 
 // Admin
 
@@ -35,8 +41,7 @@ Route::prefix('admin')->name('admin.')->middleware('admin')->group(function ()
     Route::get('/', [AdminPanelMainController::class, 'index'])->name('dashboard');
 
     Route::resource('/users', UserController::class)->only(['index', 'destroy', 'edit', 'update']);
-//    Route::resource('/users', UserController::class)->only(['index', 'destroy']);
-//    Route::get('/users', [UserController::class, 'index'])->name('users');
+
 }
 );
 
