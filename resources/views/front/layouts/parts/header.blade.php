@@ -65,9 +65,8 @@
     </div>
 
     <div class="row mx-auto">
-        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 d-flex justify-content-center">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
             <nav class="navbar navbar-expand-lg navbar-light">
-
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="border: 1px solid white; width: 50px">
                     <span>
                         <svg xmlns="http://www.w3.org/2000/svg"
@@ -92,7 +91,7 @@
                             <a class="nav-link  text-white" href="#">О нас</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link  text-white" href="#">Контакты</a>
+                            <a class="nav-link  text-white" href={{ route('contact-form') }}>Контакты</a>
                         </li>
                     </ul>
                 </div>
