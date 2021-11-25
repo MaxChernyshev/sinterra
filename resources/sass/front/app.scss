@@ -1,5 +1,5 @@
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 // Variables
 @import '_variables';
@@ -8,3 +8,8 @@
 
 // Bootstrap
 @import '../../../node_modules/bootstrap/scss/bootstrap';
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
