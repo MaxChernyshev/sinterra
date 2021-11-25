@@ -49,7 +49,7 @@
 
     <div class="container-fluid">
         <div class="row mx-auto">
-            <div class="col-10 align-self-auto">
+            <div class="col-12 align-self-auto">
                 <span class="lead">
                     Качественные и современные инженерные коммуникации – не менее важно для Вашего комфорта, чем дизайн интерьера.
                     А использование альтернативных источников энергии еще и обеспечивает максимальную энергоэффективность, снижение затрат на эксплуатацию.
@@ -61,7 +61,34 @@
         </div>
 
         <div class="row mx-auto">
-            <div class="col-5 align-self-auto">
+            <div class="col-3 align-self-auto">
+                <img src="{{ asset('img/mainpage/services-1.png') }}" alt="">
+            </div>
+            <div class="col-3 align-self-auto">
+                <img src="{{ asset('img/mainpage/services-2.png') }}" alt="">
+            </div>
+            <div class="col-3 align-self-auto">
+                <img src="{{ asset('img/mainpage/services-3.png') }}" alt="">
+            </div>
+            <div class="col-3 align-self-auto">
+                <img src="{{ asset('img/mainpage/services-4.png') }}" alt="">
+            </div>
+            <div class="col-3 align-self-auto">
+                <img src="{{ asset('img/mainpage/services-5.png') }}" alt="">
+            </div>
+            <div class="col-3 align-self-auto">
+                <img src="{{ asset('img/mainpage/services-6.png') }}" alt="">
+            </div>
+            <div class="col-3 align-self-auto">
+                <img src="{{ asset('img/mainpage/services-7.png') }}" alt="">
+            </div>
+            <div class="col-3 align-self-auto">
+                <img src="{{ asset('img/mainpage/services-8.png') }}" alt="">
+            </div>
+        </div>
+
+        <div class="row mx-auto">
+            <div class="col-6 align-self-auto">
                 <h3>Что мы предлагаем:</h3>
                 <ul>
                     <li>Комплексный подход "под ключ": проектирование, подбор, поставка, монтаж</li>
@@ -70,7 +97,7 @@
                     <li>Экспертность по инженерному оборудованию и новинкам этого направления</li>
                 </ul>
             </div>
-            <div class="col-5 align-self-auto">
+            <div class="col-6 align-self-auto">
                 <h3>Как мы работаем:</h3>
                 <ul>
                     <li>Фиксируем все условия, бюджет и сроки выполнения в договоре</li>
