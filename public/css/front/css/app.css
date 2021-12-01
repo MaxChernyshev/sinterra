@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Nunito);
+@import url(https://fonts.googleapis.com/css2?family=Montserrat&display=swap);
 @charset "UTF-8";
 .header {
   background: #558b2f;
@@ -10025,4 +10025,7 @@ h3 {
     color: inherit;
     border-color: #dee2e6;
   }
+}
+body {
+  font-family: "Montserrat", sans-serif;
 }

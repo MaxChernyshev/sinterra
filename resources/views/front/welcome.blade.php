@@ -60,35 +60,23 @@
             </div>
         </div>
 
-        <div class="row mx-auto">
-            <div class="col-3 align-self-auto">
-                <img src="{{ asset('img/mainpage/services-1.png') }}" alt="">
-            </div>
-            <div class="col-3 align-self-auto">
-                <img src="{{ asset('img/mainpage/services-2.png') }}" alt="">
-            </div>
-            <div class="col-3 align-self-auto">
-                <img src="{{ asset('img/mainpage/services-3.png') }}" alt="">
-            </div>
-            <div class="col-3 align-self-auto">
-                <img src="{{ asset('img/mainpage/services-4.png') }}" alt="">
-            </div>
-            <div class="col-3 align-self-auto">
-                <img src="{{ asset('img/mainpage/services-5.png') }}" alt="">
-            </div>
-            <div class="col-3 align-self-auto">
-                <img src="{{ asset('img/mainpage/services-6.png') }}" alt="">
-            </div>
-            <div class="col-3 align-self-auto">
-                <img src="{{ asset('img/mainpage/services-7.png') }}" alt="">
-            </div>
-            <div class="col-3 align-self-auto">
-                <img src="{{ asset('img/mainpage/services-8.png') }}" alt="">
-            </div>
+        <div class="row mt-5 mb-5 mx-auto">
+            @foreach($jobTypes as $item)
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 mt-5 mb-5 align-self-auto ">
+                    <a href="{{ route('jobtypes.show', ['slug' => $item->slug]) }}">
+                        <img class="mx-auto d-block w-50" src="{{ $item->thumbnail }}" alt="">
+                        <h5 class="mt-4 text-center">
+                            <u class="">
+                                {{ $item->title }}
+                            </u>
+                        </h5>
+                    </a>
+                </div>
+            @endforeach
         </div>
 
         <div class="row mx-auto">
-            <div class="col-6 align-self-auto">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 align-self-auto">
                 <h3>Что мы предлагаем:</h3>
                 <ul>
                     <li>Комплексный подход "под ключ": проектирование, подбор, поставка, монтаж</li>
@@ -97,7 +85,7 @@
                     <li>Экспертность по инженерному оборудованию и новинкам этого направления</li>
                 </ul>
             </div>
-            <div class="col-6 align-self-auto">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 align-self-auto">
                 <h3>Как мы работаем:</h3>
                 <ul>
                     <li>Фиксируем все условия, бюджет и сроки выполнения в договоре</li>

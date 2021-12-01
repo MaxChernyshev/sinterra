@@ -12,6 +12,9 @@
         }
     </style>
     <link rel="stylesheet" href="{{ asset('css/front/css/app.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 <body class="antialiased">
 {{--<div class="relative flex items-top justify-center h-16">--}}
@@ -34,7 +37,9 @@
 <div class="container-fluid header pt-5">
     <div class="row mx-auto">
         <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
-            <img src="{{ asset('img/logo-energy.png') }}" alt="">
+            <a href="{{ route('mainPage') }}">
+                <img src="{{ asset('img/logo-energy.png') }}" alt="">
+            </a>
         </div>
         <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
             <ul class="list-unstyled text-white">
@@ -82,7 +87,7 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link  text-white" href="#">Монтаж</a>
+                            <a class="nav-link  text-white" href="{{ route('jobtypes.index') }}">Виды работ</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link  text-white" href="#">Наши работы</a>
