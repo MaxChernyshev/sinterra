@@ -7,6 +7,7 @@ use App\Http\Controllers\Front\MainController;
 use App\Http\Controllers\Admin\AdminPanelMainController;
 use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\Front\ContactFormController;
+use App\Http\Controllers\Front\JobTypeController;
 
 
 
@@ -28,6 +29,12 @@ Auth::routes();
 Route::get('/', [MainController::class, 'index'])->name('mainPage');
 
 Route::get('/home', [HomeController::class, 'index'])->name('home');
+
+Route::prefix('jobtypes')->name('jobtypes.')->group(function (){
+    Route::get('/', [JobTypeController::class, 'index'])->name('index');
+    Route::get('/{slug}', [JobTypeController::class, 'show'])->name('show');
+});
+
 
 Route::get('/contact', [ContactFormController::class, 'index'])->name('contact-form');
 

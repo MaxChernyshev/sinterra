@@ -87,7 +87,7 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link  text-white" href="#">Монтаж</a>
+                            <a class="nav-link  text-white" href="{{ route('jobtypes.index') }}">Виды работ</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link  text-white" href="#">Наши работы</a>

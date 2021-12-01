@@ -62,16 +62,17 @@
 
         <div class="row mt-5 mb-5 mx-auto">
             @foreach($jobTypes as $item)
-            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 mt-5 mb-5 align-self-auto ">
-                <img class="mx-auto d-block" src="{{ $item->thumbnail }}" alt="">
-                <h5 class="mt-4 text-center">
-                    <u class="">
-                        {{ $item->title }}
-                    </u>
-                </h5>
-            </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 mt-5 mb-5 align-self-auto ">
+                    <a href="{{ route('jobtypes.show', ['slug' => $item->slug]) }}">
+                        <img class="mx-auto d-block w-50" src="{{ $item->thumbnail }}" alt="">
+                        <h5 class="mt-4 text-center">
+                            <u class="">
+                                {{ $item->title }}
+                            </u>
+                        </h5>
+                    </a>
+                </div>
             @endforeach
-
         </div>
 
         <div class="row mx-auto">
