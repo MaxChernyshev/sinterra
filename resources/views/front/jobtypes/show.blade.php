@@ -4,6 +4,13 @@
     <div class="container">
         <div class="row mt-5">
             <div class="col-lg-12 my-auto">
+                {{ Breadcrumbs::render('jobtype', $jobType) }}
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-lg-12 my-auto">
                 <h1 class="mt-4 text-center mt-5 mb-5">
                     <strong>
                         {{ $jobType->title }}
